@@ -1,4 +1,4 @@
-# cm.front
+# workwise.assistive.frontend
 
 ## Project setup
 ```
