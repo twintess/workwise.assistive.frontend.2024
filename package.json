@@ -1,0 +1,54 @@
+{
+  "name": "workwise-assistive.frontend",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build && rm -rf ../workwise.assistive.backend/wwwroot/assets && cp -r ./dist/* ../workwise.assistive.backend/wwwroot",
+    "serve": "vite preview",
+    "lint": "eslint --ext .js,.vue --ignore-path .gitignore --fix src",
+    "prepare": "husky",
+    "format": "prettier --write src"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.2",
+    "@fortawesome/free-brands-svg-icons": "^6.6.0",
+    "@fortawesome/free-solid-svg-icons": "^6.5.2",
+    "@fortawesome/vue-fontawesome": "^3.0.6",
+    "@vitejs/plugin-vue": "^5.0.4",
+    "@vueuse/core": "^10.9.0",
+    "axios": "^1.6.8",
+    "core-js": "^3.37.0",
+    "pinia": "^2.1.7",
+    "vite": "^5.2.10",
+    "vue": "^3.4.26",
+    "vue-cal": "^4.8.1",
+    "vue-router": "^4.3.2"
+  },
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.25.0",
+    "husky": "^9.0.11",
+    "naive-ui": "^2.38.1",
+    "prettier": "3.2.5"
+  },
+  "eslintConfig": {
+    "root": true,
+    "env": {
+      "es2021": true,
+      "vue/setup-compiler-macros": true
+    },
+    "extends": [
+      "plugin:vue/vue3-essential",
+      "eslint:recommended"
+    ],
+    "rules": {}
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ]
+}
